@@ -70,47 +70,47 @@ Navigate to the `easy_my_trip_holidays/` directory for all commands.
 
 **Terminal 1: Start the Flight Agent**
 ```bash
-cd flight_agent && source .venv/bin/activate && uvicorn __main__:main --port 10001
+cd flight_agent && source .venv/bin/activate && uvicorn __main__:app --port 10001
 ```
 
 **Terminal 2: Start the Hotel Agent**
 ```bash
-cd hotel_agent && source .venv/bin/activate && uvicorn __main__:main --port 10002
+cd hotel_agent && source .venv/bin/activate && uvicorn __main__:app --port 10002
 ```
 
 **Terminal 3: Start the Cab Agent**
 ```bash
-cd cab_agent && source .venv/bin/activate && uvicorn __main__:main --port 10003
+cd cab_agent && source .venv/bin/activate && uvicorn __main__:app --port 10003
 ```
 
 **Terminal 4: Start the Activity Agent**
 ```bash
-cd activity_agent && source .venv/bin/activate && uvicorn __main__:main --port 10004
+cd activity_agent && source .venv/bin/activate && uvicorn __main__:app --port 10004
 ```
 
 **Terminal 5: Start the Weather Agent**
 ```bash
-cd weather_agent && source .venv/bin/activate && uvicorn __main__:main --port 10005
+cd weather_agent && source .venv/bin/activate && uvicorn __main__:app --port 10005
 ```
 
 **Terminal 6: Start the Budget Agent**
 ```bash
-cd budget_agent && source .venv/bin/activate && uvicorn __main__:main --port 10006
+cd budget_agent && source .venv/bin/activate && uvicorn __main__:app --port 10006
 ```
 
 **Terminal 7: Start the Document Agent**
 ```bash
-cd document_agent && source .venv/bin/activate && uvicorn __main__:main --port 10007
+cd document_agent && source .venv/bin/activate && uvicorn __main__:app --port 10007
 ```
 
 **Terminal 8: Start the Food Agent**
 ```bash
-cd food_agent && source .venv/bin/activate && uvicorn __main__:main --port 10008
+cd food_agent && source .venv/bin/activate && uvicorn __main__:app --port 10008
 ```
 
 **Terminal 9: Start the Currency Agent**
 ```bash
-cd currency_agent && source .venv/bin/activate && uvicorn __main__:main --port 10009
+cd currency_agent && source .venv/bin/activate && uvicorn __main__:app --port 10009
 ```
 
 **Terminal 10: Start the Travel Planner Host Agent**
