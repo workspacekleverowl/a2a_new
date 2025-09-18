@@ -5,8 +5,8 @@ from a2a.server.tasks import InMemoryTaskStore
 from a2a.types import AgentCapabilities, AgentCard, AgentSkill
 from agent_executor import FoodAgentExecutor
 
-def create_app():
-    """Creates the ASGI application."""
+
+def main():
     skill = AgentSkill(
         id="find_restaurants",
         name="Find Restaurants",
@@ -35,10 +35,9 @@ def create_app():
         http_handler=request_handler,
         agent_card=agent_card,
     )
-    return server.build()
 
-app = create_app()
+    uvicorn.run(server.build(), host="0.0.0.0", port=10008)
+
 
 if __name__ == "__main__":
-    # This allows running the script directly for development/debugging
-    uvicorn.run(app, host="0.0.0.0", port=10008)
+    main()
