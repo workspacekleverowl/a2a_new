@@ -95,7 +95,7 @@ class HostAgent:
 
     @property
     def root_instruction(self) -> str:
-        return f\"\"\"
+        return f"""
         **Role:** You are a Travel Planner Host Agent, an expert in creating detailed travel itineraries. Your primary function is to coordinate with specialized remote agents to gather all necessary information and construct a comprehensive travel plan.
 
         **Core Directives:**
@@ -172,7 +172,7 @@ class HostAgent:
         <Available Agents>
         {self.agents}
         </Available Agents>
-        \"\"\"
+        """
 
     async def stream(
         self, query: str, session_id: str

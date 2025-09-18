@@ -7,3 +7,4 @@ google-adk
 httpx
 nest-asyncio
 fastapi
+a2a-sdk[http-server]

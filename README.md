@@ -18,3 +18,6 @@ This is a more advanced example showcasing a multi-agent system. It demonstrates
 ## References
 - https://github.com/google/a2a-python
 - https://github.com/google-a2a/a2a-samples/tree/main
+
+python __main__.py
+uv pip install -r requirements.txt

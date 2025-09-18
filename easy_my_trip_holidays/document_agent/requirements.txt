@@ -2,3 +2,5 @@ a2a-sdk
 uvicorn
 pydantic
 python-dotenv
+fastapi
+a2a-sdk[http-server]
