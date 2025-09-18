@@ -247,11 +247,14 @@ class HostAgent:
         send_response: SendMessageResponse = await client.send_message(message_request)
         print("send_response", send_response)
 
-        if not isinstance(
-            send_response.root, SendMessageSuccessResponse
-        ) or not isinstance(send_response.root.result, Task):
-            print("Received a non-success or non-task response. Cannot proceed.")
-            return
+        if not isinstance(send_response.root, SendMessageSuccessResponse) or not isinstance(
+            send_response.root.result, Task
+        ):
+            error_message = (
+                "Received a non-success or non-task response from remote agent."
+            )
+            print(error_message)
+            return [{"text": f"Error: {error_message}"}]
 
         response_content = send_response.root.model_dump_json(exclude_none=True)
         json_content = json.loads(response_content)
