@@ -190,7 +190,6 @@ class HostAgent:
             session = await self._runner.session_service.create_session(
                 app_name=self._agent.name,
                 user_id=self._user_id,
-                state={{}},
                 session_id=session_id,
             )
         async for event in self._runner.run_async(
