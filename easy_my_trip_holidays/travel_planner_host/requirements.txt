@@ -1,0 +1,9 @@
+a2a-sdk
+uvicorn
+pydantic
+python-dotenv
+google-generativeai
+google-adk
+httpx
+nest-asyncio
+fastapi
